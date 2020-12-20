@@ -1,9 +1,7 @@
 library(ggplot2)
 library(tidyverse)
 library(hrbrthemes)
-library(nlme)
 library(scales)
-library(ggthemr)
 options(scipen=1000)
 
 
