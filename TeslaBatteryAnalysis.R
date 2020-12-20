@@ -26,7 +26,7 @@ Tesla$Remaining <- Tesla$Remaining/100
 names(Tesla)[14] <- "Replaced"
 Tesla <- Tesla[is.na(Tesla$Replaced),]
 
-ggplot(Tesp, aes(x=MKM, y=Remaining)) +
+ggplot(Tesla, aes(x=MKM, y=Remaining)) +
   geom_point(color="cyan3") +
   stat_smooth(method = "gam", formula = y ~ s(x), size = 1, fill = "deepskyblue") +
   theme_ipsum_rc(grid="Y") +
